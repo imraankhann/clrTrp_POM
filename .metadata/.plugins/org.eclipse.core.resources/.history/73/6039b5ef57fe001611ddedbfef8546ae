@@ -1,0 +1,66 @@
+package pageLib;
+
+import java.util.logging.Logger;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class HomePgLib {
+	
+	WebDriver driver;
+	
+	static Logger log=Logger.getLogger(HomePgLib.class.getName());
+	
+	By roundTrp=By.cssSelector("#RoundTrip");
+	
+	By returnOnTxt=By.cssSelector("#ReturnDateContainer dt label");
+	
+	By fromSrc=By.cssSelector("#FromTag");
+	
+	By toDest=By.cssSelector("#ToTag");
+	
+	By departOn=By.cssSelector("#DepartDate");
+	
+	By departDate=By.cssSelector(".ui-state-default");
+	
+	
+	By srchBtn=By.cssSelector("#SearchBtn");
+	
+	
+	public void selectRoundTrpRadioBtn(){
+		log.info("Selecting round trip radio button....");
+		driver.findElement(roundTrp).click();
+	}
+	
+	public boolean isReturnOnVisible(){
+		return driver.findElement(returnOnTxt).isDisplayed();
+	}
+	
+	public void passDeparture(String depart){
+		log.info("Passing departure place in text box... ");
+		driver.findElement(fromSrc).sendKeys(depart);
+	}
+	
+	public void passArrival(String arrive){
+		log.info("Passing arrival place in text box.. ");
+		driver.findElement(toDest).sendKeys(arrive);
+	}
+	
+	public void clickDepartOn(){
+		log.info("Clicking on depart on date picker...");
+		driver.findElement(departOn).click();
+	}
+	
+	public void selectDepartDtInDatePicker(String day) throws InterruptedException{
+		clickDepartOn();
+		Thread.sleep(4000);
+		String d1=".//*[@id='ui-datepicker-div']/div[1]/table/tbody/tr[1]/td[";
+		String d2="]/a";
+		log.info("Selecting day from depart date picker... ");
+		driver.findElement(By.xpath(d1+day+d2)).click();
+		
+	}
+	
+	
+
+}

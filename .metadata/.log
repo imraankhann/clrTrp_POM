@@ -1,0 +1,198 @@
+!SESSION 2017-03-01 12:43:48.824 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/12045/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/12045/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2017-03-01 12:44:08.615
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-01 12:48:13.261
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-01 12:48:13.268
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-01 12:49:41.334
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-01 12:49:41.344
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-01 12:50:27.259
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-01 12:50:27.263
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-01 12:50:46.846
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-01 12:50:46.847
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-01 12:51:21.452
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-01 12:51:21.454
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-01 12:56:06.706
+!MESSAGE Invalid ZIP archive: /Users/12045/.m2/repository/junit/junit/4.10/junit-4.10.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-01 12:56:06.830
+!MESSAGE Invalid ZIP archive: /Users/12045/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-01 12:56:08.398
+!MESSAGE Invalid ZIP archive: /Users/12045/.m2/repository/junit/junit/4.10/junit-4.10.jar
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 24 2017-03-01 12:56:08.412
+!MESSAGE Status index is not available Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.IllegalArgumentException: No enum constant org.eclipse.epp.internal.logging.aeri.ui.model.ProblemStatus.RequiredAction.CONFIRMED
+	at java.lang.Enum.valueOf(Enum.java:236)
+	at org.eclipse.epp.internal.logging.aeri.ui.model.ProblemStatus$RequiredAction.valueOf(ProblemStatus.java:1)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.loadStatus(ProblemsDatabaseService.java:112)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.seen(ProblemsDatabaseService.java:83)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.seen(ProblemsDatabaseService.java:73)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ReportPredicates$ProblemDatabaseIgnoredPredicate.apply(ReportPredicates.java:44)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ReportPredicates$ProblemDatabaseIgnoredPredicate.apply(ReportPredicates.java:1)
+	at com.google.common.base.Predicates$AndPredicate.apply(Predicates.java:343)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.LogListener.logging(LogListener.java:48)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.jdt.internal.core.util.Util.log(Util.java:1865)
+	at org.eclipse.jdt.internal.core.util.Util.log(Util.java:1851)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.computeChildren(JarPackageFragmentRoot.java:104)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.initializePackageNames(JavaProjectElementInfo.java:253)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.getProjectCache(JavaProjectElementInfo.java:226)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.newNameLookup(JavaProjectElementInfo.java:291)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:59)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:66)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:178)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:271)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:191)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:178)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:136)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:105)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:406)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:173)
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-01 12:56:08.429
+!MESSAGE Invalid ZIP archive: /Users/12045/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-01 12:57:15.136
+!MESSAGE Invalid ZIP archive: /Users/12045/.m2/repository/junit/junit/4.10/junit-4.10.jar
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 24 2017-03-01 12:57:15.149
+!MESSAGE Status index is not available Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.IllegalArgumentException: No enum constant org.eclipse.epp.internal.logging.aeri.ui.model.ProblemStatus.RequiredAction.CONFIRMED
+	at java.lang.Enum.valueOf(Enum.java:236)
+	at org.eclipse.epp.internal.logging.aeri.ui.model.ProblemStatus$RequiredAction.valueOf(ProblemStatus.java:1)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.loadStatus(ProblemsDatabaseService.java:112)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.seen(ProblemsDatabaseService.java:83)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.seen(ProblemsDatabaseService.java:73)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ReportPredicates$ProblemDatabaseIgnoredPredicate.apply(ReportPredicates.java:44)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ReportPredicates$ProblemDatabaseIgnoredPredicate.apply(ReportPredicates.java:1)
+	at com.google.common.base.Predicates$AndPredicate.apply(Predicates.java:343)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.LogListener.logging(LogListener.java:48)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.jdt.internal.core.util.Util.log(Util.java:1865)
+	at org.eclipse.jdt.internal.core.util.Util.log(Util.java:1851)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.computeChildren(JarPackageFragmentRoot.java:104)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.initializePackageNames(JavaProjectElementInfo.java:253)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.getProjectCache(JavaProjectElementInfo.java:226)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.newNameLookup(JavaProjectElementInfo.java:291)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:59)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:66)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:178)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:271)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:191)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-01 12:57:15.153
+!MESSAGE Invalid ZIP archive: /Users/12045/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-01 12:57:24.350
+!MESSAGE Invalid ZIP archive: /Users/12045/.m2/repository/junit/junit/4.10/junit-4.10.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-01 12:57:24.356
+!MESSAGE Invalid ZIP archive: /Users/12045/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-01 12:57:57.525
+!MESSAGE Invalid ZIP archive: /Users/12045/.m2/repository/junit/junit/4.10/junit-4.10.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-03-01 12:57:57.546
+!MESSAGE Invalid ZIP archive: /Users/12045/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar
+
+!ENTRY org.eclipse.recommenders.rcp 2 15 2017-03-01 15:13:39.546
+!MESSAGE Failed to parse news feed
+!STACK 0
+java.net.UnknownHostException: www.codetrails.com: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:901)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1295)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1248)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.getRSSFeed(CheckForProjectNewsJob.java:138)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:89)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:62)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

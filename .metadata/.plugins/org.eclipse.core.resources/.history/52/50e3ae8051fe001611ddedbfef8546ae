@@ -1,0 +1,17 @@
+package utill;
+
+import java.util.concurrent.TimeUnit;
+
+public class CommonUtill {
+	
+	public static boolean implicitWait(long time){
+		try {
+			Driver.driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
+			System.out.println("waited for "+time+" seconds implicityly... ");
+		}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+}

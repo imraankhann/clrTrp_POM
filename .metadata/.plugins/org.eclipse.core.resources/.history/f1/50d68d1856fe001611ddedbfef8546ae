@@ -1,0 +1,42 @@
+package pageLib;
+
+import java.util.logging.Logger;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class HomePgLib {
+	
+	WebDriver driver;
+	
+	static Logger log=Logger.getLogger(HomePgLib.class.getName());
+	
+	By roundTrp=By.cssSelector("#RoundTrip");
+	
+	By returnOnTxt=By.cssSelector("#ReturnDateContainer dt label");
+	
+	By fromSrc=By.cssSelector("#FromTag");
+	
+	By toDest=By.cssSelector("#ToTag");
+	
+	By departDate=By.cssSelector("#DepartDate");
+	
+	By srchBtn=By.cssSelector("#SearchBtn");
+	
+	
+	public void selectRoundTrpRadioBtn(){
+		log.info("Selecting round trip radio button....");
+		driver.findElement(roundTrp).click();
+	}
+	
+	public boolean isReturnOnVisible(){
+		return driver.findElement(returnOnTxt).isDisplayed();
+	}
+	
+	public void passDeparture(String depart){
+		log.info("Passing departure in text box... ");
+		driver.findElement(fromSrc).sendKeys(depart);
+	}
+	
+
+}
