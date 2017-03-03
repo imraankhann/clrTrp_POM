@@ -1,0 +1,50 @@
+package testScripts;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import pageLib.HomePgLib;
+import testBase.TestBase;
+import utill.CommonUtill;
+
+public class TC001_HmePgValidation extends TestBase {
+	
+	HomePgLib hmePg;
+	CommonUtill commonutil;
+	
+	@BeforeClass
+	public void setup(){
+		init();
+	}
+	
+
+	
+	@Test
+	
+	public void HmePgNegativeValidation(){
+		String expectedTxt="You missed this";
+		hmePg=new HomePgLib(driver);
+		commonutil.implicitWait(3000);
+		hmePg.clckSrchFlights();
+		Assert.assertEquals(hmePg.getValidationMsgIfFieldNotSelected(), expectedTxt);
+		
+		
+	}
+
+	
+	
+	
+	@AfterClass
+	public void closeBrowser(){
+		driver.close();
+		driver.quit();
+
+	}
+		
+	}
+	
+	
+
+

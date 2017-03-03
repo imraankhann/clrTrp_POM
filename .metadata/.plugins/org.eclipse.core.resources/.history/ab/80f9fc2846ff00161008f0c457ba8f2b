@@ -1,0 +1,30 @@
+package testScripts;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import pageLib.HomePgLib;
+import testBase.TestBase;
+import utill.CommonUtill;
+
+public class TC001_HmePgValidation extends TestBase {
+	
+	HomePgLib hmePg;
+	CommonUtill commontutil;
+	
+	@BeforeClass
+	public void setup(){
+		init();
+	}
+	
+	@Test
+	public boolean isReturnOnVisible(){
+		hmePg=new HomePgLib(driver);
+		commontutil.implicitWait(3000);
+	return	hmePg.isReturnOnVisible();
+		
+	}
+	
+	
+
+}

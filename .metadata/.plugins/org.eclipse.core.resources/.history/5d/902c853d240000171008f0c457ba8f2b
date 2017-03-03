@@ -1,0 +1,47 @@
+package testScripts;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import pageLib.HomePgLib;
+import testBase.TestBase;
+import utill.CommonUtill;
+
+public class TC001_HmePgValidation extends TestBase {
+	
+	HomePgLib hmePg;
+	CommonUtill commontutil;
+	
+	@BeforeClass
+	public void setup(){
+		init();
+	}
+	
+	@Test
+	public void isReturnOnVisible(){
+		hmePg=new HomePgLib(driver);
+		commontutil.implicitWait(3000);
+		hmePg.selectRoundTrpRadioBtn();
+		commontutil.implicitWait(2000);
+	
+		Assert.assertTrue(hmePg.isReturnOnVisible());
+
+	}
+	
+	
+	
+	
+	@AfterClass
+	public void closeBrowser(){
+		driver.close();
+		driver.quit();
+
+	}
+		
+	}
+	
+	
+
+

@@ -1,0 +1,19 @@
+package testScripts;
+
+import org.testng.annotations.BeforeClass;
+
+import pageLib.HomePgLib;
+import testBase.TestBase;
+import utill.CommonUtill;
+
+public class TC001_HmePgValidation extends TestBase {
+	
+	HomePgLib hmePg;
+	CommonUtill commontutil;
+	
+	@BeforeClass
+	
+	
+	
+
+}

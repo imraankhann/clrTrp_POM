@@ -17,6 +17,9 @@ public class TestBase {
 	public WebDriver driver;
 	
 	public void init() {
+		loadPropertiesFile();
+		selectBrowser(Repository.getProperty("browser"));
+		driver.get(Repository.getProperty("url"));
 		
 	}
 	
@@ -29,7 +32,6 @@ public class TestBase {
 			
 			
 		} catch (IOException e) {
-			// TODO: handle exception
 		}
 		String url="";
 		String browser="";

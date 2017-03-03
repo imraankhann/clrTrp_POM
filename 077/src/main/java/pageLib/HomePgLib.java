@@ -23,8 +23,16 @@ public class HomePgLib {
 	
 	By departDate=By.cssSelector(".ui-state-default");
 	
-	
 	By srchBtn=By.cssSelector("#SearchBtn");
+	
+	By youMissedThis=By.xpath("//*[@id='ORtrip']//section[1]//div[1]/dl/dd/span/small");
+	
+	
+	
+	public HomePgLib(WebDriver driver){
+		this.driver=driver;
+	}
+	
 	
 	
 	public void selectRoundTrpRadioBtn(){
@@ -33,7 +41,11 @@ public class HomePgLib {
 	}
 	
 	public boolean isReturnOnVisible(){
-		return driver.findElement(returnOnTxt).isDisplayed();
+		boolean flag=false;
+		if(driver.findElement(returnOnTxt).isDisplayed()){
+			flag=true;
+		}
+		return flag;
 	}
 	
 	public void passDeparture(String depart){
@@ -49,6 +61,12 @@ public class HomePgLib {
 	public void clickDepartOn(){
 		log.info("Clicking on depart on date picker...");
 		driver.findElement(departOn).click();
+	}
+	
+	public String getValidationMsgIfFieldNotSelected(){
+		log.info("Get text from negative validation.. ");
+		return driver.findElement(youMissedThis).getText();
+		
 	}
 	
 	public void selectDepartDtInDatePicker(String day) throws InterruptedException{
@@ -73,6 +91,8 @@ public class HomePgLib {
 		log.info("Click on Search Flights button.... ");
 		driver.findElement(srchBtn).click();
 	}
+	
+	
 	
 	
 	

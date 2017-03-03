@@ -1,0 +1,4 @@
+testScripts/TC001_HmePgValidation.class
+testBase/TestBase.class
+testBase/ApacheCLI.class
+testBase/ApacheCLI$CLI.class

@@ -1,0 +1,13 @@
+package pageLib;
+
+import java.util.logging.Logger;
+
+public class SearchResultsPg {
+	
+	WebDriver driver;
+	
+	static Logger log=Logger.getLogger(SearchResultsPg.class.getName());
+	
+	.searchSummary .truncate:first-child
+
+}
